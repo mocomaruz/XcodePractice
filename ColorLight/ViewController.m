@@ -13,7 +13,9 @@
 - (IBAction)switchOnOff:(UISwitch *)sender;
 - (IBAction)segmentFirstScond:(UISegmentedControl *)sender;
 @property (weak, nonatomic) IBOutlet UISlider *mySlider;
-- (IBAction)updateValue:(id)sender;
+- (IBAction)updateValue:(UISlider *)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *valueLabel;
 
 @end
 
@@ -57,7 +59,9 @@
     
     
 }
-- (IBAction)updateValue:(id)sender {
+
+- (IBAction)updateValue:(UISlider *)sender {
     NSLog(@"%.1f %%" , _mySlider.value * 100);
+    _valueLabel.text = [NSString stringWithFormat:@"%.1f" , sender.value * 100];
 }
 @end
