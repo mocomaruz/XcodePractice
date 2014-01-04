@@ -12,6 +12,8 @@
 
 - (IBAction)switchOnOff:(UISwitch *)sender;
 - (IBAction)segmentFirstScond:(UISegmentedControl *)sender;
+@property (weak, nonatomic) IBOutlet UISlider *mySlider;
+- (IBAction)updateValue:(id)sender;
 
 @end
 
@@ -54,5 +56,8 @@
         }
     
     
+}
+- (IBAction)updateValue:(id)sender {
+    NSLog(@"%.1f %%" , _mySlider.value * 100);
 }
 @end
