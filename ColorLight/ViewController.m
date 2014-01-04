@@ -10,11 +10,17 @@
 
 @interface ViewController ()
 
+// Switch とSegment 用のAction
 - (IBAction)switchOnOff:(UISwitch *)sender;
 - (IBAction)segmentFirstScond:(UISegmentedControl *)sender;
+
+// Slider 用のproperty
 @property (weak, nonatomic) IBOutlet UISlider *mySlider;
+
+// Slider 用のAction
 - (IBAction)updateValue:(UISlider *)sender;
 
+// Label 用のproperty
 @property (weak, nonatomic) IBOutlet UILabel *valueLabel;
 
 @end
@@ -33,6 +39,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+// Switch で背景色を変更する
+
 - (IBAction)switchOnOff:(UISwitch *)sender {
     NSLog(@"switch %d",sender.on);
 
@@ -43,6 +52,8 @@
     }
     
 }
+
+// Segmented Control で背景色を変更する
 
 - (IBAction)segmentFirstScond:(UISegmentedControl *)sender {
     NSLog(@"segment %d",sender.selectedSegmentIndex);
@@ -57,11 +68,15 @@
         {self.view.backgroundColor = [UIColor blueColor];
         }
     
-    
 }
 
+// Slider の位置によってLabel 部分にfloat1 *100 で表示させる
+
 - (IBAction)updateValue:(UISlider *)sender {
+// Log 出力(%.1f でfloat 1桁, 最後に*100 で0.0-100.0)
     NSLog(@"%.1f %%" , _mySlider.value * 100);
+    
+// Label に表示
     _valueLabel.text = [NSString stringWithFormat:@"%.1f" , sender.value * 100];
 }
 @end
