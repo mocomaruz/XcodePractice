@@ -80,3 +80,4 @@
     _valueLabel.text = [NSString stringWithFormat:@"%.1f" , sender.value * 100];
 }
 @end
+// Commit のテスト1
