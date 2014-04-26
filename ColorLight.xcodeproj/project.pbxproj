@@ -19,8 +19,6 @@
 		FFAF95CA187690EE00DED2CA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF95C9187690EE00DED2CA /* XCTest.framework */; };
 		FFAF95CB187690EE00DED2CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF95AA187690EE00DED2CA /* Foundation.framework */; };
 		FFAF95CC187690EE00DED2CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFAF95AE187690EE00DED2CA /* UIKit.framework */; };
-		FFAF95D4187690EE00DED2CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFAF95D2187690EE00DED2CA /* InfoPlist.strings */; };
-		FFAF95D6187690EE00DED2CA /* ColorLightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAF95D5187690EE00DED2CA /* ColorLightTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +48,6 @@
 		FFAF95C2187690EE00DED2CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FFAF95C8187690EE00DED2CA /* ColorLightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorLightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAF95C9187690EE00DED2CA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		FFAF95D1187690EE00DED2CA /* ColorLightTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColorLightTests-Info.plist"; sourceTree = "<group>"; };
-		FFAF95D3187690EE00DED2CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FFAF95D5187690EE00DED2CA /* ColorLightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorLightTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				FFAF95B0187690EE00DED2CA /* ColorLight */,
-				FFAF95CF187690EE00DED2CA /* ColorLightTests */,
 				FFAF95A9187690EE00DED2CA /* Frameworks */,
 				FFAF95A8187690EE00DED2CA /* Products */,
 			);
@@ -134,24 +128,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FFAF95CF187690EE00DED2CA /* ColorLightTests */ = {
-			isa = PBXGroup;
-			children = (
-				FFAF95D5187690EE00DED2CA /* ColorLightTests.m */,
-				FFAF95D0187690EE00DED2CA /* Supporting Files */,
-			);
-			path = ColorLightTests;
-			sourceTree = "<group>";
-		};
-		FFAF95D0187690EE00DED2CA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FFAF95D1187690EE00DED2CA /* ColorLightTests-Info.plist */,
-				FFAF95D2187690EE00DED2CA /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,7 +172,7 @@
 		FFAF959F187690EE00DED2CA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = mocomaruz;
 				TargetAttributes = {
 					FFAF95C7187690EE00DED2CA = {
@@ -238,7 +214,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFAF95D4187690EE00DED2CA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +234,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFAF95D6187690EE00DED2CA /* ColorLightTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,14 +264,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FFAF95D2187690EE00DED2CA /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFAF95D3187690EE00DED2CA /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -305,7 +271,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -344,7 +309,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -402,7 +366,6 @@
 		FFAF95DD187690EE00DED2CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColorLight.app/ColorLight";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -425,7 +388,6 @@
 		FFAF95DE187690EE00DED2CA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ColorLight.app/ColorLight";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -460,6 +422,7 @@
 				FFAF95DB187690EE00DED2CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFAF95DC187690EE00DED2CA /* Build configuration list for PBXNativeTarget "ColorLightTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +431,7 @@
 				FFAF95DE187690EE00DED2CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
